@@ -1,0 +1,103 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  --color: #E1E1E1;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+  padding-top: 100px;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the navbar horizontally */
+  
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 30px;
+  /* padding: 10px 0px; */
+  padding: 10px 0;
+  padding-left: 20px;
+  margin-top: 20px;
+  z-index: 1000;
+}
+
+ .title{
+  /* border: 1px solid black; */
+  display: flex;
+  margin-top: 100px; 
+   text-align: center;
+   justify-content: center;
+  font-size: 3em;
+  font-weight: 900;
+  margin-left: 300px;
+  margin-right: 300px;
+  gap: 10px;
+  font-family: ui-sans-serif, system-ui;
+  
+} 
+.maintitle{
+  color: white; 
+  padding: 10px;
+  padding-top: 0;
+  border-radius: 4px;
+  background-color: rgb(28, 100, 242);
+
+}
+
+.addWebbox{
+  margin-top: 40px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    column-gap: 50px; /* Space between cards */
+    row-gap: 50px;
+    justify-content: center; /* Center the grid items horizontally */
+  align-items: center; /* Center the grid items vertically */
+  padding:100px;
+}
+
+.card{
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+@media (max-width: 1265px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two items per row for smaller screens */
+  }
+  .title{
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 690px) {
+  .card-grid {
+    margin-left: 10%;
+    grid-template-columns: 1fr; /* One item per row for extra small screens */
+  }
+}
+
+.card-container{
+  margin-top: 40px;
+  
+}
+@media (max-width: 1056px) {
+  .title{
+    font-size:1.8em;
+  }
+}
+
+a{
+  text-decoration: none;
+}
